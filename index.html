@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lite DeathMatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/icons/logo.svg" type="image/x-icon">
+</head>
+<body id="body" class="body">
+    
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="img/icons/logo.svg" alt="Logo" class="logo">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link" data-scroll="#general">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link" data-scroll="#guide">Как начать игру</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Форум</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://vk.com/litedeathmatch" target="_blank" class="nav__link">Мы Вконтакте</a>
+                        </li>
+                    </ul>
+                </nav> <!-- /.nav -->
+                <div class="mobile__nav-wrapper">
+                    <button id="burger" class="open__mobile">
+                        <span class="burger"></span>
+                        <span class="burger-text">Меню</span>
+                    </button>
+                    <nav class="mobile-nav" id="mobile-nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" data-scroll="#general">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" data-scroll="#guide">Как начать игру</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="https://forum.diamondrp.ru" class="nav__link">Форум</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="https://vk.com/eugeneloveyou" target="_blank" class="nav__link">Мы ВКонтакте</a>
+                            </li>
+                        </ul>
+                    </nav> <!-- /.mobile-nav -->
+                </div> <!-- /.mobile__nav-wrapper -->
+                <a href="./donate.html" class="btn">Пополнить счет</a>
+            </div> <!-- /.header__inner -->
+        </div> <!-- /.container -->
+    </header>
+    <!--========== \END HEADER ==========-->
+
+    <main>
+        <!-- Секция "Главный экран" -->
+        <section class="general" id="general">
+            <div class="container">
+                <div class="general__inner">
+                    <div class="general__content">
+                        <h1 class="general__title"><span>Lite DeathMatch</span> Место твоей жизни и смерти</h1>
+                        <div class="general__buttons">
+                            <a href="#" class="btn" data-scroll="#guide">Скачать лаунчер</a>
+                            <a href="samp://46.174.50.46:7790" class="general__btn btn">
+                                <img src="img/icons/joystick.svg" alt="Joystick icon">
+                                Начать игру
+                            </a>
+                            <a href="./donate.html" class="general__btn-responsive btn">Пополнить счет</a>
+                        </div>
+                    </div> <!-- /.general__content -->
+                    <div class="general__visual">
+                        <img src="img/general/humans.png" alt="Humans" class="general__img">
+                    </div>
+                </div> <!-- /.general__inner -->
+            </div> <!-- /.container -->
+        </section>
+        
+        <!-- Секция "Мониторинг сервера" -->
+        <section class="monitoring">
+            <div class="container">
+                <h2 class="title"><span>Мониторинг</span> Сервера</h2>
+                <div class="monitoring__inner">
+                    <div class="monitoring__visual">
+                        <img src="img/monitoring/man.png" alt="Man" class="monitoring__img">
+                        <img src="img/monitoring/man-tablets.png" alt="Man" class="monitoring__img-responsive">
+                    </div>
+                    <div class="monitoring__content">
+                        <div class="monitoring__server">
+                            <div class="counter">
+                                <p><span>50</span>/1000</p>
+                            </div>
+                            <div class="monitoring__info">
+                                <h2 class="monitoring__info-name">Lite Death Match  Server#1</h2>
+                                <div class="monitoring__adress">
+                                    <div class="adress-row">
+                                        <a href="samp://46.174.50.46:7790" class="adress-field" id="adress-field">192.168.0.1:7777</a>
+                                    </div>
+                                    <button class="adress-btn">
+                                        <img src="img/icons/copy.svg" alt="Copy">
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="samp://46.174.50.46:7790" class="monitoring__btn btn">Играть</a>
+                        </div>
+                        <div class="monitoring__server">
+                            <div class="counter counter-empty">
+                                <p><span>0</span>/1000</p>
+                            </div>
+                            <div class="monitoring__info">
+                                <h2 class="monitoring__info-name">Lite Death Match  Server#2</h2>
+                            </div>
+                            <a href="samp://46.174.50.46:7790" class="monitoring__btn btn">Cкоро</a>
+                        </div>
+                        <div class="monitoring__server">
+                            <div class="counter counter-empty">
+                                <p><span>0</span>/1000</p>
+                            </div>
+                            <div class="monitoring__info">
+                                <h2 class="monitoring__info-name">Lite Death Match  Server#3</h2>
+                            </div>
+                            <a href="samp://46.174.50.46:7790" class="monitoring__btn btn">Скоро</a>
+                        </div>
+                    </div> <!-- /.monitoring__content -->
+                </div> <!-- /.monitoring__inner -->
+            </div> <!-- /.container -->
+        </section> 
+    
+        <!-- Секция "Особенности игры" -->
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__inner">
+                    <h2 class="title"><span>Особенности</span> Игры</h2>
+                    <div class="benefits__content">
+                        <div class="benefits__item" data-aos="fade-up" data-aos-duration="700">
+                            <div class="benefits__item-content">
+                                <h3 class="benefits__item-title">Интересные квесты</h3>
+                                <p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam.</p>
+                            </div>
+                        </div>
+                        <div class="benefits__item" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="benefits__item-content">
+                                <h3 class="benefits__item-title">Мини игры</h3>
+                                <p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam.</p>
+                            </div>
+                        </div>
+                        <div class="benefits__item" data-aos="fade-up" data-aos-duration="1700">
+                            <div class="benefits__item-content">
+                                <h3 class="benefits__item-title">Торговля имуществом</h3>
+                                <p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://youtu.be/ucLzxNSPsg8" target="_blank" class="benefits__btn btn" data-aos="fade-up" data-aos-duration="700">И многое другое</a>
+                </div> <!-- /.benefits__inner -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- Секция "Как начать играть" -->
+        <section class="guide" id="guide">
+            <div class="container">
+                <div class="guide__inner">
+                    <h2 class="title"><span>Как начать</span> играть</h2>
+                    <div class="guide__content">
+                        <div class="guide__item">
+                            <p class="guide__item-number">01</p>
+                            <div class="guide__item-content">
+                                <h3 class="guide__item-title">Скачайте и установите что то</h3>
+                                <p class="guide__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam.</p>
+                                <a href="https://youtu.be/tYWMagefG34" target="_blank" class="guide__btn btn">Скачать что то там</a>
+                            </div>
+                        </div>
+                        <div class="guide__item">
+                            <p class="guide__item-number">02</p>
+                            <div class="guide__item-content">
+                                <h3 class="guide__item-title">Скачайте и установите что то</h3>
+                                <p class="guide__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam.</p>
+                                <a href="https://youtu.be/tYWMagefG34" target="_blank" class="guide__btn btn">Скачать что то там</a>
+                            </div>
+                        </div>
+                        <div class="guide__item">
+                            <p class="guide__item-number">03</p>
+                            <div class="guide__item-content">
+                                <h3 class="guide__item-title">Скачайте и установите что то</h3>
+                                <p class="guide__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna proin netus quam.</p>
+                                <a href="https://youtu.be/tYWMagefG34" target="_blank" class="guide__btn btn">Скачать что то там</a>
+                            </div>
+                        </div>
+                    </div> <!-- /.guide__content -->
+                </div> <!-- /.guide__inner -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- Секция "Социальные сети" -->
+        <section class="socials">
+            <div class="container">
+                <div class="socials__inner">
+                    <div class="socials__item">
+                        <a href="#" class="socials__pin" data-aos="zoom-in">
+                            <img src="img/icons/vk.svg" alt="VK" class="socials__icon">
+                        </a>
+                        <div class="socials__item-content">
+                            <h4 class="socials__item-title">Новостное сообщество <span>ВКонтакте</span></h4>
+                            <a href="https://t.me/pavelfers" target="_blank" class="socials__btn">Подписаться</a>
+                        </div>
+                    </div>
+                    <div class="socials__item">
+                        <a href="#" class="socials__pin" data-aos="zoom-in">
+                            <img src="img/icons/telegram.svg" alt="Telegram" class="socials__icon">
+                        </a>
+                        <div class="socials__item-content">
+                            <h4 class="socials__item-title">Наш канал в <span>Телеграм</span></h4>
+                            <a href="https://t.me/pavelfers" target="_blank" class="socials__btn">Подписаться</a>
+                        </div>
+                    </div>
+                    <div class="socials__item">
+                        <a href="#" class="socials__pin" data-aos="zoom-in">
+                            <img src="img/icons/discord.svg" alt="Discord" class="socials__icon">
+                        </a>
+                        <div class="socials__item-content">
+                            <h4 class="socials__item-title">Наш канал <span>Discord</span></h4>
+                            <a href="https://t.me/pavelfers" target="_blank" class="socials__btn">Подключиться</a>
+                        </div>
+                    </div>
+                </div> <!-- /.socials__inner -->
+            </div> <!-- /.container -->
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <nav class="footer__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link" data-scroll="#guide">Как начать игру</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://forum.diamondrp.ru" class="nav__link">Форум</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://vk.com/eugeneloveyou" target="_blank" class="nav__link">Мы ВКонтакте</a>
+                        </li>
+                    </ul>
+                </nav> <!-- /.nav -->
+                <a href="index.html" class="footer__logo">
+                    <img src="img/icons/logo.svg" alt="Logo">
+                </a>
+                <a href="userf/public-offerta.pdf" target="_blank" class="nav__link">Договор офферты</a>
+            </div> <!-- /.footer__inner -->
+        </div> <!-- /.container -->
+    </footer>
+    <!--========== \END FOOTER ==========-->
+
+    <!-- Jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Jquery circle progress library for section monitoring -->
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+    <!-- Main js file connection -->
+    <script src="js/main.js"></script>
+    <!-- AOS Animation on Scroll CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS Animation on Scroll Initialize-->
+    <script> AOS.init(); </script>
+    <!-- Mobile menu js script connection -->
+    <script type="text/javascript">
+        let burger = document.getElementById('burger'),
+            nav    = document.getElementById('mobile-nav'),
+            slowmo = document.getElementById('slowmo');
+            body   = document.getElementById('body');
+    
+        // Открытие мобильного Гамбургер меню
+        $('.nav__link').on('click', function(event){
+        $('#body').removeClass('no-scroll');
+        $('.mobile-nav').removeClass('is-open');
+        $('.open__mobile').removeClass('is-open');
+        });    
+    
+        burger.addEventListener('click', function(e){
+            this.classList.toggle('is-open');
+            nav.classList.toggle('is-open');
+        });
+    
+        burger.addEventListener('click', function(e){
+            body.classList.toggle('no-scroll');
+        });
+    
+        slowmo.addEventListener('click', function(e){
+            this.classList.toggle('is-slowmo');
+        });
+    
+        burger.addEventListener('click', function(e){
+            this.classList.toggle('is-open');
+            nav.classList.toggle('is-open');
+        });
+    </script>
+    <!-- Smooth scroll js script connection -->
+    <script>
+        $("[data-scroll]").on("click", function(event) {
+          event.preventDefault();
+              
+            let elementId = $(this).data(`scroll`);
+            let elementOffset = $(elementId).offset().top;
+                      
+        $("html, body").animate({
+          scrollTop: elementOffset - -100
+          }, 600);
+        });  
+    </script>
+</body>
+</html>
